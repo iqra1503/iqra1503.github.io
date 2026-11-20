@@ -1,0 +1,63 @@
+title: Jannatul Ferdous Iqra
+name: Jannatul Ferdous Iqra
+description: >
+  ECE undergraduate at RUET | Machine Learning | NLP & LLM Evaluation | Federated Learning
+url: "https://iqra1503.github.io"
+baseurl: ""
+lang: en
+
+author:
+  name: Jannatul Ferdous Iqra
+  position: B.Sc. in Electrical and Computer Engineering, RUET
+  institution: Rajshahi University of Engineering & Technology
+  location: Dhaka, Bangladesh
+  email: jannatuliqra134340@gmail.com
+  github: iqra1503
+  linkedin: jannatul-ferdous-iqra-6a55bb32
+  google_scholar: ""
+  orcid: ""
+
+include:
+  - _pages
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: "_pages"
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: "_projects"
+    values:
+      layout: "page"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# No pagination: the blog page lists site.posts directly. jekyll-paginate only
+# works on a file named index.html, so it silently did nothing here.
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - node_modules/
+  - .sass-cache/
